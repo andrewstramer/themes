@@ -17,7 +17,7 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main" role="main">
 
 		<?php
 		if ( have_posts() ) {
@@ -25,11 +25,11 @@ get_header();
 			// Load posts loop.
 			while ( have_posts() ) {
 				the_post();
-				get_template_part( 'template-parts/content/content' );
+				get_template_part( 'template-parts/content/content', get_theme_mod( 'index_display_excerpt_or_full_post', 'full' ) );
 			}
 
-			// Previous/next page navigation.
-			seedlet_the_posts_navigation();
+			// Numbered pagination.
+			seedlet_the_posts_pagination();
 
 		} else {
 

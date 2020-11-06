@@ -12,7 +12,7 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -42,8 +42,8 @@ get_header();
 				// End the loop.
 			endwhile;
 
-			// Previous/next page navigation.
-			seedlet_the_posts_navigation();
+			// Numbered pagination.
+			seedlet_the_posts_pagination();
 
 			// If no content, include the "No posts found" template.
 		else :

@@ -2,3 +2,7 @@ node_modules
 twentynineteen/
 theme-dev-utils/
 theme-dev-utils
+vendor/
+*.DS_Store
+*.zip
+*.rej

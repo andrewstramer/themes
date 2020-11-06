@@ -10,9 +10,13 @@
 	a {
 		color: var(--global--color-primary);
 
-		&:hover,
-		&:focus {
+		&:hover {
 			color: var(--global--color-primary-hover);
+			border-color: var(--global--color-secondary);
+		}
+
+		&:focus {
+			color: var(--global--color-secondary);
 		}
 
 		&:active {
@@ -23,7 +27,7 @@
 	.nav-links {
 		@include media(mobile) {
 			display: flex;
-			justify-content: center;
+			justify-content: space-between;
 
 			.nav-next,
 			.nav-previous {
