@@ -36,6 +36,14 @@ add_color_rule( 'bg', '#ffffff', array(
 			.wp-block-button__link,
 			.wp-block-button__link:focus,
 			.wp-block-button__link:hover,
+			.wp-block-cover-image.has-background-background-color .wp-block-cover-image-text,
+			.wp-block-cover-image.has-background-background-color .wp-block-cover-text,
+			.wp-block-cover-image.has-background-background-color .wp-block-cover__inner-container,
+			.wp-block-cover.has-background-background-color .wp-block-cover-image-text,
+			.wp-block-cover.has-background-background-color .wp-block-cover-text,
+			.wp-block-cover.has-background-background-color .wp-block-cover__inner-container,
+			.wp-block-cover.has-background-dim,
+			.wp-block-cover-image.has-background-dim,
 			.wp-block-file .wp-block-file__button,
 			.wp-block-file a.wp-block-file__button:active,
 			.wp-block-file a.wp-block-file__button:focus,
@@ -77,14 +85,11 @@ add_color_rule( 'bg', '#ffffff', array(
 			.has-background-dark-color[class],
 			.has-background-light-color[class]', 'color' ),
 	// Background-color
-	array( '.has-background-background-color[class],
-			.has-background-background-color.has-background-dim[class]', 'background-color' ),
+	array( '.has-background-background-color[class]', 'background-color' ),
 	// Background-color darkened
-	array( '.has-background-dark-background-color[class],
-			.has-background-dark-background-color.has-background-dim[class]', 'background-color', '-1' ),
+	array( '.has-background-dark-background-color[class]', 'background-color', '-1' ),
 	// Background-color lightened
-	array( '.has-background-light-background-color[class],
-			.has-background-light-background-color.has-background-dim[class]', 'background-color', '+1' ),
+	array( '.has-background-light-background-color[class]', 'background-color', '+1' ),
 
 	/**
  	 * Grays
@@ -169,8 +174,7 @@ add_color_rule( 'link', '#3E7D98', array(
 	 * Utility Classes
 	 */
 	// Background-color
-	array( '.has-primary-background-color[class],
-			.has-primary-background-color.has-background-dim[class]', 'background-color' ),
+	array( '.has-primary-background-color[class]', 'background-color' ),
 	// Text-color
 	array( '.has-primary-color[class]', 'color' ),
 
@@ -242,20 +246,17 @@ add_color_rule( 'txt', '#394d55', array(
 	 */
 	// Foreground
 	array( '.has-foreground-color[class]', 'color' ),
-	array( '.has-foreground-background-color[class],
-			.has-foreground-background-color.has-background-dim[class]', 'background-color' ),
+	array( '.has-foreground-background-color[class]', 'background-color' ),
 
 	// Text-color darkened
 	array( '.has-foreground-dark-color[class]', 'color', '-1' ),
 	// Background-color darkened
-	array( '.has-foreground-dark-background-color[class],
-			.has-foreground-dark-background-color.has-background-dim[class]', 'background-color', '-1' ),
+	array( '.has-foreground-dark-background-color[class]', 'background-color', '-1' ),
 
 	// Text-color brightened
 	array( '.has-foreground-light-color[class]', 'color', '+2' ),
 	// Background-color brightened
-	array( '.has-foreground-light-background-color[class],
-			.has-foreground-light-background-color.has-background-dim[class]', 'background-color', '+2' ),
+	array( '.has-foreground-light-background-color[class]', 'background-color', '+2' ),
 
 ), __( 'Text Color' ) );
 
@@ -345,8 +346,7 @@ add_color_rule( 'fg1', '#9B6A36', array(
 	array( '.has-secondary-color[class]', 'color' ),
 
 	// Background-color
-	array( '.has-secondary-background-color[class],
-			.has-secondary-background-color.has-background-dim[class]', 'background-color' ),
+	array( '.has-secondary-background-color[class]', 'background-color' ),
 
 ), __( 'Secondary Color' ) );
 

@@ -16,7 +16,6 @@
 .pagination .nav-links,
 .sticky-post,
 .site-title,
-.site-title:focus,
 .site-info,
 #cancel-comment-reply-link,
 img:after,
@@ -40,7 +39,6 @@ h6 {
 .comment-author .fn,
 .no-comments,
 .site-title,
-.site-title:focus,
 h1,
 h2,
 h3,
@@ -86,9 +84,7 @@ h3 {
 }
 
 .site-title,
-.site-title:focus,
 .site-description,
-.site-description:focus,
 .main-navigation,
 .nav-links,
 .page-title,
@@ -123,7 +119,6 @@ h6 {
 }
 
 .site-title,
-.site-title:focus,
 .page-title {
 	font-weight: 700;
 	font-size: $font__size-md;
@@ -134,9 +129,7 @@ h6 {
 	font-weight: bold;
 }
 
-.site-description,
-.wp-block-a8c-site-description,
-.wp-block-a8c-site-description:focus {
+.site-description {
 	letter-spacing: normal;
 	font-size: $font__size-xs;
 }
