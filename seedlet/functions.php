@@ -110,7 +110,7 @@ if ( ! function_exists( 'seedlet_setup' ) ) :
 		add_editor_style(
 			array(
 				seedlet_fonts_url(),
-				'./assets/css/ie-editor.css',
+				'./assets/css/style-editor.css',
 			)
 		);
 
@@ -358,21 +358,10 @@ function seedlet_scripts() {
 	wp_enqueue_style( 'seedlet-fonts', seedlet_fonts_url(), array(), null );
 
 	// Theme styles
-<<<<<<< HEAD
-	global $is_ie;
-	if ( $is_ie ) {
-		// If IE 11 or below, use a flattened stylesheet with static values replacing CSS Variables
-		wp_enqueue_style( 'seedlet-style', get_template_directory_uri() . '/assets/css/ie.css', array(), wp_get_theme()->get( 'Version' ) );
-	} else {
-		// If not IE, use the standard stylesheet
-		wp_enqueue_style( 'seedlet-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-	}
-=======
 	wp_enqueue_style( 'seedlet-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 
 	// Navigation styles
 	wp_enqueue_style( 'seedlet-style-navigation', get_template_directory_uri() . '/assets/css/style-navigation.css', array(), wp_get_theme()->get( 'Version' ) );
->>>>>>> trunk
 
 	// RTL styles
 	wp_style_add_data( 'seedlet-style', 'rtl', 'replace' );
