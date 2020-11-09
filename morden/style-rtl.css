@@ -4105,9 +4105,6 @@ p:not(.site-title) a:hover {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	.site-header-wrap.has-logo:not(.has-title-and-tagline) {
-		grid-template-areas: "site-logo main-navigation" "site-logo social-navigation";
-	}
 	.site-header-wrap .site-logo {
 		grid-area: site-logo;
 		margin-bottom: 16px;

@@ -2659,7 +2659,7 @@ object {
 		-moz-column-gap: 0;
 		column-gap: 0;
 	}
-	
+
 	/* Prevent media from being split between the columns */
 	.two-column .panel-content .entry-content .wp-block-image,
 	.two-column .panel-content .entry-content .wp-block-gallery,
