@@ -6,10 +6,10 @@ vendor/
 *.DS_Store
 *.zip
 *.rej
+**/*.map
 
 #Ignoring headstart and language files
-*/inc/headstart
-*/languages
+*/languages/*
 
 #Retired themes we do not track in git
 able/
@@ -17,8 +17,6 @@ academica/
 adaption/
 adelle/
 adventure-journal/
-affinity/inc/headstart/
-affinity/languages/
 afterlight-2/
 afterlight/
 albeo/
@@ -265,8 +263,6 @@ silver-black/
 simpla/
 singl/
 skeptical/
-sketch/inc/headstart/
-sketch/languages/
 skylark/
 snaps/
 sobe/
